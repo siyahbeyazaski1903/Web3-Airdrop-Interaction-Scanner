@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Web3 Airdrop Interaction Scanner</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+
+</head>
+
+<body>
+
+<h1>Web3 Airdrop Interaction Scanner</h1>
+
+<p>Analyze wallet interactions for potential airdrops</p>
+
+<input id="walletInput" placeholder="Enter wallet address">
+
+<button onclick="scanWallet()">Scan Wallet</button>
+
+<div class="card">
+<h2>Transactions</h2>
+<div id="txCount">-</div>
+</div>
+
+<div class="card">
+<h2>Contracts Interacted</h2>
+<div id="contracts">-</div>
+</div>
+
+<div class="card">
+<h2>NFT Minted</h2>
+<div id="nfts">-</div>
+</div>
+
+<div class="card score">
+<h2>Airdrop Farming Score</h2>
+<div id="score">-</div>
+</div>
+
+<script src="config.js"></script>
+<script src="protocols.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
